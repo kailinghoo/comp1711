@@ -1,10 +1,15 @@
 #include <stdio.h>
-
 int main() {
-    int maxint = int_max;
-    int maxfloat = float_max;
-    int maxdouble = double_max;
-    int maxstring = string_max;
-    printf("%d %d %d %d", maxint maxfloat maxdouble maxstring);
+    int intType;
+    float floatType;
+    double doubleType;
+    char charType;
+
+    // sizeof evaluates the size of a variable
+    printf("Size of int: %zu bytes\n", sizeof(intType));
+    printf("Size of float: %zu bytes\n", sizeof(floatType));
+    printf("Size of double: %zu bytes\n", sizeof(doubleType));
+    printf("Size of char: %zu byte\n", sizeof(charType));
+    
     return 0;
 }
